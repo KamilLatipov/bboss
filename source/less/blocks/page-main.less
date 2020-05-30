@@ -1,0 +1,75 @@
+@import "../variables";
+
+.page-main__header {
+  position: relative;
+  width: 290px;
+  z-index: 2;
+
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  padding: 0;
+
+  background-color: white;
+
+  &--index {
+    margin-bottom: 11px;
+  }
+}
+
+.page-main__title {
+  font-size: 18px;
+  color: @text-color - 51;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    width: 560px;
+  }
+
+  .page-main__title {
+    font-size: 28px;
+
+    &--index {
+      font-size: 21px;
+    }
+  }
+
+  .page-main__intro {
+    padding-top: 9px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    padding-top: 35px;
+  }
+
+  .page-main__title {
+    margin-top: 0;
+
+    &--index {
+      margin-top: 14px;
+    }
+  }
+}

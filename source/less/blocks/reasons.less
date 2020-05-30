@@ -1,0 +1,202 @@
+@import "../variables";
+
+.reasons__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.reasons__wrapper {
+  width: 320px;
+
+  padding-top: 10px;
+  padding-bottom: 24px;
+
+  background-color: #eeeeee;
+
+  &--main {
+    padding-top: 35px;
+    padding-bottom: 27px;
+
+    background-color: @light-blue;
+  }
+}
+
+.reasons__image {
+  display: block;
+
+  &--sedona {
+    &-desktop {
+      display: none;
+    }
+
+    &-table {
+      display: none;
+    }
+  }
+
+  &--bridge {
+    &-desktop {
+      display: none;
+    }
+
+    &-table {
+      display: none;
+    }
+  }
+}
+
+.reasons__briefly {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: @text-color - 51;
+}
+
+.reasons__item {
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid rgb(214, 214, 214);
+  line-height: 21px;
+
+  &--main {
+    color: white;
+
+    .reasons__briefly {
+      color: white;
+    }
+
+    &-2 {
+      .reasons__wrapper {
+        padding-top: 25px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item--main {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 768px;
+
+    &-2 {
+      margin-top: -5px;
+
+      .reasons__wrapper {
+        order: 2;
+
+        .reasons__image {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  .reasons__wrapper {
+    width: 256px;
+    padding: 20px 0;
+  }
+
+  .reasons__image {
+    flex-grow: 1;
+
+    &--sedona {
+      &-mobile {
+        display: none;
+      }
+
+      &-table {
+        display: none;
+      }
+    }
+
+    &--bridge {
+      &-mobile {
+        display: none;
+      }
+
+      &-table {
+        display: block;
+      }
+    }
+  }
+
+  .reasons__text {
+    display: block;
+
+    margin: 0 auto;
+
+    width: 180px;
+  }
+
+  .reasons__briefly {
+    margin: 0 auto;
+    margin-top: 24px;
+
+    width: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__list {
+    margin-bottom: 0;
+
+    width: 1200px;
+  }
+
+  .reasons__item--main {
+    width: 1200px;
+  }
+
+  .reasons__wrapper {
+    width: 400px;
+
+    padding-top: 40px;
+  }
+
+  .reasons__text {
+    display: inline-block;
+
+    width: 260px;
+  }
+
+  .reasons__briefly {
+    margin-top: 10px;
+  }
+
+  .reasons__image {
+    &--sedona {
+      &-mobile {
+        display: none;
+      }
+
+      &-desktop {
+        display: block;
+      }
+    }
+
+    &--bridge {
+      &-mobile {
+        display: none;
+      }
+
+      &-table {
+        display: none;
+      }
+
+      &-desktop {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+body {
+  font-family: @font-family-main;
+  font-size: 14px;
+  color: @text-color;
+  text-transform: uppercase;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  overflow: hidden;
+}
