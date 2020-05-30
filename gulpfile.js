@@ -39,7 +39,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/blocks/**/*.less", gulp.series("css"));
   gulp.watch("source/pages/*.pug", gulp.series("pug"));
 });
 

@@ -1,3 +1,14 @@
 @import "normalize.css";
+.header-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-navigation__item--active {
+  border: 1px solid black;
+}
 
 /*# sourceMappingURL=global.css.map */
