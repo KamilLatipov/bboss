@@ -11,7 +11,7 @@ const server = require("browser-sync").create();
 
 
 gulp.task("css", function () {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/style/global.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
@@ -24,7 +24,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("pug", function () {
-  return gulp.src("source/*.pug")
+  return gulp.src("source/pages/index.pug")
     .pipe(pug())
     .pipe(gulp.dest("build"))
     .pipe(server.stream());
@@ -40,7 +40,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.pug", gulp.series("pug"));
+  gulp.watch("source/pages/*.pug", gulp.series("pug"));
 });
 
 gulp.task("start", gulp.series("css", "pug", "server"));

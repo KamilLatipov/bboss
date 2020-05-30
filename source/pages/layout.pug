@@ -1,0 +1,23 @@
+include ../blocks/header/header.pug
+
+doctype html
+html
+  head
+    title Title
+  body
+    block header
+      +header({
+        nav: [
+          {name: "About"},
+          {name: "Services"},
+          {name: "Skills"},
+          {name: "Team as a service"},
+          {name: "Industries"},
+          {name: "Case studies"},
+          {name: "Approach", active: true},
+          {name: "Blog"},
+          {name: "Contacts"},
+        ]
+      })
+    block content
+    block footer

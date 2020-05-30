@@ -1,0 +1,9 @@
+include ../header-navigation/header-navigation
+
+mixin header({nav})
+  .header
+    .header__container
+      a.header__logo
+        img.header__img
+      .header__nav
+        +header-navigation(nav)

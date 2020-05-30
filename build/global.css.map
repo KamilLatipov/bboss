@@ -1,0 +1,1 @@
+{"version":3,"sources":["global.css","global.less"],"names":[],"mappings":"AAAA,uBCAQ","file":"global.css","sourcesContent":["@import \"normalize.css\";\n","@import \"normalize.css\";\n@import \"../blocks/header/header\";\n@import \"../blocks/footer/footer\";\n\nbody {\n\n}\n"]}
