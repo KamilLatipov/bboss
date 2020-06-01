@@ -1,14 +1,25 @@
-.header-navigation__list {
+.navigation__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  &--footer {
+    justify-content: flex-start;
+  }
 
   width: 100%;
 
   font-size: 16px;
 }
 
-.header-navigation__item {
+.navigation__item {
   position: relative;
+
+  margin-right: 28.5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &--active {
     &::after {

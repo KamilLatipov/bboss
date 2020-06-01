@@ -1,7 +1,0 @@
-mixin header-navigation(nav)
-  .header-navigation__list
-    each item in nav
-      - let classes = ["header-navigation__item"]
-      if (item.active)
-        - classes.push("header-navigation__item--active")
-      a(class = classes)= item.name

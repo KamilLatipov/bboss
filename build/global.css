@@ -12,11 +12,13 @@
   font-style: normal;
 }
 .header {
+  position: fixed;
   width: 100%;
+  padding: 60px 0 25px 0;
   color: white;
   background-color: black;
 }
-.header__container {
+.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,20 +39,63 @@
 .header__nav {
   width: 74%;
 }
-.header-navigation__list {
+.footer {
+  color: white;
+  background-color: black;
+}
+.footer__wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.footer__logo {
+  width: 15.2%;
+  padding-bottom: 50px;
+}
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.footer__nav {
+  width: 71%;
+  opacity: 0.5;
+}
+.footer__copyright {
+  opacity: 0.5;
+  font-size: 16px;
+}
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   font-size: 16px;
 }
-.header-navigation__item {
-  position: relative;
+.navigation__list--footer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.header-navigation__item--active::after {
+.navigation__item {
+  position: relative;
+  margin-right: 28.5px;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+.navigation__item--active::after {
   content: "";
   position: absolute;
   top: 54px;
@@ -66,6 +111,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 .logo__text {
@@ -80,6 +128,9 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 18px;
   font-weight: normal;
+}
+p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=global.css.map */

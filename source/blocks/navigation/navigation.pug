@@ -1,0 +1,10 @@
+mixin navigation(nav, isFooter)
+  - let listClass = ["navigation__list"]
+  if (isFooter)
+    - listClass.push("navigation__list--footer")
+  div(class= listClass)
+    each item in nav
+      - let itemClass = ["navigation__item"]
+      if (item.active)
+        - itemClass.push("navigation__item--active")
+      a(class = itemClass)= item.name

@@ -1,7 +1,13 @@
 include ../logo/logo
+include ../navigation/navigation
 
-mixin footer({})
+mixin footer({nav})
   footer.footer
-    .footer__container
+    .footer__wrapper
       .footer__logo
         +logo
+      .footer__container
+        .footer__nav
+          +navigation(nav, true)
+        .footer__copyright
+          p.footer__text © bboss.io 2020

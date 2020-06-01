@@ -1,4 +1,9 @@
 extends layout
 
-block content
+include ../blocks/main/main
 
+block content
+  main.main
+    section.approach
+      .approach__main
+        +main

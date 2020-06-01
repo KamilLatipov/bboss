@@ -1,10 +1,10 @@
-include ../header-navigation/header-navigation
+include ../navigation/navigation
 include ../logo/logo
 
 mixin header({nav})
   header.header
-    .header__container
+    .header__wrapper
       .header__logo
         +logo
       .header__nav
-        +header-navigation(nav)
+        +navigation(nav)

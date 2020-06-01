@@ -1,4 +1,5 @@
 include ../blocks/header/header.pug
+include ../blocks/footer/footer.pug
 
 doctype html
 html
@@ -22,3 +23,15 @@ html
       })
     block content
     block footer
+      +footer({
+        nav: [
+          {name: "About"},
+          {name: "Services"},
+          {name: "Skills"},
+          {name: "Team as a service"},
+          {name: "Industries"},
+          {name: "Case studies"},
+          {name: "Approach"},
+          {name: "Contacts"},
+        ],
+      })
