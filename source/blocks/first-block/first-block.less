@@ -1,0 +1,58 @@
+.first-block {
+  width: 100%;
+}
+
+.first-block__section {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 53%;
+
+  & > * {
+    margin-bottom: 42px;
+  }
+}
+
+.first-block__title {
+  font-size: 90px;
+  font-weight: 600;
+
+  margin-bottom: 47px;
+}
+
+.first-block__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.first-block__text {
+  line-height: 29px;
+
+  &--last {
+    position: relative;
+    padding-top: 116px;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 10px;
+      left: 20px;
+
+      width: 80px;
+      height: 71px;
+
+      background-image: url("../img/teamwork.svg");
+    }
+  }
+}
+
+.first-block__line {
+  width: 100%;
+  height: 1px;
+
+  background-color: white;
+
+  opacity: 0.4;
+}

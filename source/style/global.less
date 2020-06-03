@@ -1,14 +1,13 @@
-@import "normalize.css";
 @import "variable.less";
-@import "fonts.less";
 @import "../blocks/header/header";
 @import "../blocks/footer/footer";
 @import "../blocks/navigation/navigation";
 @import "../blocks/logo/logo";
+@import "../pages/approach";
+@import "../blocks/first-block/first-block";
 
 body {
   margin: 0;
-  padding: 0;
 
   color: @common-font-color;
   font-family: "IBM Plex Sans", sans-serif;
@@ -16,6 +15,24 @@ body {
   font-weight: normal;
 }
 
+h1 {
+  margin: 0;
+}
+
 p {
   margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 132px;
+
+  width: 100%;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
 }
