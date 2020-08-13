@@ -1,0 +1,10 @@
+include ../principle-control/principle-control
+
+mixin third-block({list})
+  .third-block
+    .third-block__section
+      .third-block__title-text
+        p.third-block__text Therefore, in development, we abide by the principle of triple control - any solution passes three stages of testing before it reaches the customer and production:
+      .third-block__list
+        +principle-control(list)
+    .third-block__card

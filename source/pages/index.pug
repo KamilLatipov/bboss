@@ -1,9 +1,21 @@
 extends layout
 
 include ../blocks/first-block/first-block
+include ../blocks/second-block/second-block
+include ../blocks/third-block/third-block
 
 block content
   main.main
     section.approach
       .approach__main
         +first-block
+      .approach__second-block
+        +second-block
+      .approach__third-block
+        +third-block({
+          list: [
+            {title: "The developer himself", text: "Each developer necessarily performs automatic tests for any element of the application that he creates", link: "first.svg"},
+            {title: "The testing department", text: "Testers verify the application for compliance with the technical specifications and the correct operation of all implemented functionality", link: "second.svg"},
+            {title: "Employees of other departments", text: "We believe that the most effective testing is by third-party users, as they can see and point out all the obscure parts and difficulties during their first-time experience", link: "third.svg"},
+          ]
+        })

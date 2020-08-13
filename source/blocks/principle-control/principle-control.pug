@@ -1,0 +1,10 @@
+mixin principle-control(list)
+  ul.principle-control__list
+    each item in list
+      li.principle-control__item
+        .principle-control__image
+          img.principle-control-img(src=`img/${item.link}`)
+        .principle-control__container
+          h3.principle-control__title= item.title
+          p.principle-control__text= item.text
+
